@@ -1,0 +1,572 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <!-- CSS -->
+	<!-- get_stylesheet_uri(); -->
+    <link rel="stylesheet" href="style.css" type = "text/css">
+
+	
+    <title>Budgeting - Budfor</title>
+    <meta name="description" content="">
+    <!-- JS -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <!-- Site Icon -->
+    <!-- <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/BudforSiteIcon.png" type="image/png"> -->
+    
+	</head>
+	<body>
+		<header>
+            <nav class = "nav"> 
+                <i class="fa-solid fa-bars navOpenBtn"></i>
+                <a href = "../index.html" class = "logo"><img src = "img/Budfor.png" alt = "Budfor Logo"></a>
+                <ul class="navigation">
+                    <i class="fa-solid fa-xmark navCloseBtn "></i>
+                    <li><a href = "./budgeting.html">BUDGETING</a></li>
+                    <li><a href = "./saving.html">SAVING</a></li>
+                    <li><a href = "./investing.html">INVESTING</a></li>
+                    <li><a href = "./borrowing.html">BORROWING</a></li>
+                    <li><a href = "#">MORE<i class="fa-solid fa-arrow-down arrow-down"></i></a>
+                    <ul class = "dropdown">
+                        <li><a href = "./banking.html">BANKING</a></li>
+                        <li><a href = "./small-business.html">SMALL BUSINESS</a></li>
+                        <li><a href = "./taxes.html">TAXES</a></li>
+                        <li><a href = "./travel.html">TRAVEL</a></li>
+                        
+                    </ul>
+                    <li><a href = "../about-us.html">ABOUT US</a></li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass search-icon" id = "searchIcon"></i>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+                    <input type="text" placeholder="Search Here...">
+                </div>
+            </nav>      
+        </header>
+        <a href="#" class = "backToTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <section class="sections-intro">
+            <div class="sections-intro-container">
+                <img src="img/budgeting-image.jpg" alt="budgeting image">
+                <h1>Budgeting</h1>
+                <div class="divider"></div>
+                <p>The first step to creating financial stability is 
+                    knowing how to budget. Developing and sticking to a plan can help 
+                    you manage your debts and control your spending — the path to a stronger 
+                    financial footing.</p>
+                    <div class="social-media-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+            </div>
+        </section>
+        <section class="sections-article-replacement">
+            <div class="sections-article-replacement-container">
+                <div class="sections-article-replacement-image">
+                    <img src="img/dad-with-his-kid.jpg" alt="">
+                </div>
+                <div class="sections-article-replacement-desc">
+                    <span>BUDGETING</span>
+                    <h2>How To Make (And Stick To) A Budget Amid A Looming Recession</h2>
+                    <p>With inflation on the rise and an unpredictable economy, 
+                        having a reliable budget is arguably more important than 
+                        ever. But is it really all that difficult?</p>
+                    <a href="./article-example.html">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="budgeting-background">
+            <div class="budgeting-background-overlay"></div>
+            <div class="budgeting-background-container">
+                <div class="budgeting-background-container-fact1">
+                    <h2>47%</h2>
+                    <p>of Canadians use a budget plan to track their spending</p>
+                    <div class="budgeting-background-container-facts-divider"></div>
+                </div>
+                <div class="budgeting-background-container-fact2">
+                    <h2>90%</h2>
+                    <p>of Canadians felt more in debt than 5 years ago</p>
+                    <div class="budgeting-background-container-facts-divider"></div>
+                </div>
+            </div>
+        </section>
+        <section class="budgeting-basic">
+            <div class="budgeting-basic-container">
+                <div class="budgeting-basic-headline">
+                    <h2>Budgeting Basics</h2>
+                </div>
+                <div class="budgeting-basic-article-container">
+                    <a href="./article-example.html">
+                        <div class="budgeting-basic-article">
+                            <div class="budgeting-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="budgeting-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="budgeting-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="budgeting-basic-article">
+                            <div class="budgeting-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="budgeting-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="budgeting-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="budgeting-basic-article">
+                            <div class="budgeting-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="budgeting-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="budgeting-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="budgeting-basic-article">
+                            <div class="budgeting-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="budgeting-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="budgeting-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="article-slider">
+            <div class="article-wrapper">
+                    <div class="intro-slider-desc">
+                        <h3>Editor's Pick</h3>
+                    </div>
+                <div class="inner-article-slider-flex">
+                    <div class="slider">
+                        
+                        <div class="slide active">
+                            <div class="overlay"></div>
+                                <img class = "carousel-image" src="img/american-express-89024_1280.jpg" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>The Top 7 Best Credit Cards In Canada 2023</h3>
+                                    <span>10 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/architecture-7139263_1280-min.webp" alt="house">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>Five Biggest Investing Myths Debunked</h3>
+                                    <span>12 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/telephone-586268_1280.webp" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>Should You Finance a Phone</h3>
+                                    <span>6 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/dad-with-his-kid.jpg" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>How To Make(And Stick To) A Budget Amid A Looming Recession</h3>
+                                    <span>12 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <i class="fa-solid fa-chevron-left prev-btn"></i>
+                            <i class="fa-solid fa-chevron-right next-btn"></i>
+                        </div>
+                        <div class="slider-visibility">
+                            <div class="slide-icon active"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="article-aside-col">
+                        <a class = "hovering"href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>SAVING</span>
+                                    <h3>Exactly How Much Money Should You Be Saving?</h3>
+                                    <p>4 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>INVESTING</span>
+                                    <h3>How To Begin Investing</h3>
+                                    <p>12 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>SMALL BUSINESS</span>
+                                    <h3>Is Entrepreneurship The Right Path For Me?</h3>
+                                    <p>10 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>BANKING</span>
+                                    <h3>The Future Of Banking</h3>
+                                    <p>7 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="sections-article-replacement-2">
+            <div class="sections-article-replacement-container-2">
+                <div class="sections-article-replacement-image-2">
+                    <img src="img/woman.jpg" alt="">
+                </div>
+                <div class="sections-article-replacement-desc-2">
+                    <span>BUDGETING</span>
+                    <h2>10 Ways To Jumpstart Your Financial Literacy</h2>
+                    <p>When it comes to building up your financial literacy, 
+                        sooner is better than later. Learn how to develop these 
+                        essential skills to help you save money in the future.​</p>
+                    <a href="./article-example.html">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="budgeting-guidlines-section">
+                <div class="budgeting-guidelines-intro">
+                    <h2>How To Budget?</h2>
+                </div>
+            <div class="budgeting-guidelines-container">
+                <div class="budgeting-guidelines-desc">
+                    <div class="budgeting-guidelines-desc-inner">
+                    <p>Determining appropriate expenditures for a <b>home,</b> <b>vehicle,</b> <b>groceries,</b> <b>clothing,</b>
+                         and other <b>necessities is a common inquiry.</b> The aforementioned recommendations
+                          serve as a general benchmark and starting point for budgetary planning. 
+                    </p>
+                    <p> NOTE! That these guidelines may vary based on 
+                          personal income, familial circumstances, and geographical location.</p>
+                          <a href="./article-example.html">Read More</a>
+                    </div>
+                </div>
+                <div class="budgeting-guidelines-image">
+                    <img src="img/budgeting-guidelines.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="article-pick">
+            <div class="article-pick-container">
+                <div class="article-pick-headline">
+                    <h2>Latest Articles</h2>
+                </div>
+                <div class="article-pick-article-container">
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="faq-accordion">
+            <div class="faq-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-accordion-container">
+                <div class="faq-accordion-row-1">
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>How do I know if I need a budget?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Having a budget can be a very useful tool in developing a spending plan for your money. They allow you to get a sense of control over your finances, and enable you to get the most out of your cash. No matter your income, a budget can help you reach your financial goals faster.   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>What are the characteristics of a good budget?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                At minimum, every good budget should:
+                                <li>Be accurate and inclusive of your spending habits</li>
+                                <li>Have input from all affected parties (such as a spouse or partner)</li>
+                                <li>Include attainable savings goals</li>
+                                <li>Get reviewed and updated regularly</li>   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>Why is an emergency fund so important?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Emergency funds enable you to cover life's unexpected expenses, without going into a financial crisis. These may include major auto repairs, unplanned travel costs, and even sudden tax hikes. Don't risk losing financial stability, if you haven't done so already, begin contributing to an emergency fund.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-row-2">
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>How do I calculate my net income?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Your net income can be calculated using the following formula:
+                                 <b>(net income) = (gross income) - (deductions).</b>
+                            </p>
+                            <p>
+                                Note. Gross income is your total income earned, 
+                                and deductions include all your expenses.   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>How much income should I spend on rent?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Most experts would agree to follow the 30% Rule. It says you
+                                 should spend no more than 30% of your gross income on rent. 
+                                 This figure should allow you some room to save, invest, and
+                                  continue to grow financially.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>What are fixed and variable expenses?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Fixed expenses are consistent such as monthly rent or 
+                                mortgage costs. On the other hand, variable expenses are 
+                                inconsistent such as grocery or gas costs.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-container-row">
+                    <div class="footer-col">
+                            <a href="https://budfor.com/">
+                                <img src="img/Budfor.png" alt="Budfor Footer Logo">
+                            </a>
+                            <p>We bring forth all the possibilities for <b>maximized financial potential.</b></p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sections</h4>
+                            <ul>
+                                <li><a href="https://budfor.com/budgeting">BUDGETING</a></li>
+                                <li><a href="https://budfor.com/saving">SAVING</a></li>
+                                <li><a href="https://budfor.com/investing">INVESTING</a></li>
+                                <li><a href="https://budfor.com/borrowing">BORROWING</a></li>
+                                <li><a href="https://budfor.com/small-business">SMALL BUSINESS</a></li>
+                                <li><a href="https://budfor.com/taxes">TAXES</a></li>
+                                <li><a href="https://budfor.com/travel">TRAVEL</a></li>
+                                <li><a href="https://budfor.com/banking">BANKING</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                            <ul>
+                                <li><a href="https://budfor.com/about-us">About Us</a></li>
+                                <li><a href="https://budfor.com/support">Support</a></li>
+                                <li><a href="https://budfor.com/careers">Careers</a></li>
+                                <li><a href="https://buiomedia.com/advertising">Advertise With Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col">
+                       <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h4>Copyright © 2023 Budfor. All Rights Reserved.</h4>
+            </div>
+        </footer>
+        
+        <script src = "script.js" defer></script>
+        <!-- Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

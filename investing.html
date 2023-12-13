@@ -1,0 +1,624 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <!-- CSS -->
+	<!-- get_stylesheet_uri(); -->
+    <link rel="stylesheet" href="style.css" type = "text/css">
+
+	
+    <title>Investing - Budfor</title>
+    <meta name="description" content="">
+    <!-- JS -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- Site Icon -->
+    <!-- <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/BudforSiteIcon.png" type="image/png"> -->
+    
+	</head>
+	<body>
+		<header>
+            <nav class = "nav"> 
+                <i class="fa-solid fa-bars navOpenBtn"></i>
+                <a href = "../index.html" class = "logo"><img src = "img/Budfor.png" alt = "Budfor Logo"></a>
+                <ul class="navigation">
+                    <i class="fa-solid fa-xmark navCloseBtn "></i>
+                    <li><a href = "./budgeting.html">BUDGETING</a></li>
+                    <li><a href = "./saving.html">SAVING</a></li>
+                    <li><a href = "./investing.html">INVESTING</a></li>
+                    <li><a href = "./borrowing.html">BORROWING</a></li>
+                    <li><a href = "#">MORE<i class="fa-solid fa-arrow-down arrow-down"></i></a>
+                    <ul class = "dropdown">
+                        <li><a href = "./banking.html">BANKING</a></li>
+                        <li><a href = "./small-business.html">SMALL BUSINESS</a></li>
+                        <li><a href = "./taxes.html">TAXES</a></li>
+                        <li><a href = "./travel.html">TRAVEL</a></li>
+                        
+                    </ul>
+                    <li><a href = "../about-us.html">ABOUT US</a></li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass search-icon" id = "searchIcon"></i>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+                    <input type="text" placeholder="Search Here...">
+                </div>
+            </nav>      
+        </header>
+        <a href="#" class = "backToTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <section class="sections-intro">
+            <div class="sections-intro-container">
+                <img src="img/building.webp" alt="buidling">
+                <h1>Investing</h1>
+                <div class="divider"></div>
+                <p>Putting money into different investments can help build wealth and offset 
+                    the financial burden caused by inflation. 
+                    Take advantage of the compound growth and assemble a diversified portfolio.</p>
+                    <div class="social-media-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+            </div>
+        </section>
+            <div class="crypto-stock-container">
+                <div class="live-price">
+                    <div class="live-price-desc">
+                        <h2 id = "btc-price">$000</h2>
+                        <h2>BTC</h2>
+                    </div>
+                    <div class="crypto-stock-logo">
+                        <i class="fa-brands fa-bitcoin"></i>
+                    </div>
+                    
+                </div>
+                <div class="live-price">
+                    <div class="live-price-desc">
+                        <h2 id = "eth-price">$000</h2>
+                        <h2>ETH</h2>
+                    </div>
+                    <div class="crypto-stock-logo">
+                        <i class="fa-brands fa-ethereum"></i>
+                    </div>
+                    
+                </div>
+                <div class="live-price">
+                    <div class="live-price-desc">
+                        <h2>$000</h2>
+                        <h2>AC</h2>
+                    </div>
+                    <div class="crypto-stock-logo">
+                        
+                    </div>
+                    
+                </div>
+                <div class="live-price">
+                    <div class="live-price-desc">
+                        <h2>$000</h2>
+                        <h2>TSLA</h2>
+                    </div>
+                    <div class="crypto-stock-logo">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class = "stocks-crypto">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+            "symbols": [
+            {
+                "description": "",
+                "proName": "KRAKEN:BTCCAD"
+            },
+            {
+                "description": "",
+                "proName": "KRAKEN:ETHCAD"
+            },
+            {
+                "description": "",
+                "proName": "TSX:AC"
+            },
+            {
+                "description": "",
+                "proName": "NASDAQ:TSLA"
+            },
+            {
+                "description": "",
+                "proName": "TSX:ATH"
+            }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "light",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "en"
+        }
+            </script>
+        </div>
+        </section>
+        <section class="sections-article-replacement">
+            <div class="sections-article-replacement-container">
+                <div class="sections-article-replacement-image">
+                    <img src="img/architecture-7139263_1280-min.webp" alt="writing on a notebook">
+                </div>
+                <div class="sections-article-replacement-desc">
+                    <span>INVESTING</span>
+                    <h2>Five Biggest Investing Myths Debunked​</h2>
+                    <p>If you're just starting, investing can seem quite daunting. You may not know what facts to believe, what advice to follow, and what information to trust.</p>
+                    <a href="./article-example.html">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="investing-background">
+            <div class="investing-background-overlay"></div>
+            <div class="investing-background-container">
+                <div class="investing-background-container-fact1">
+                    <h2>Putting Your <span>Money</span> To Work</h2>
+                    <p>Assume control over your financial security and find out how to put your money back to work. Every Individual aims to achieve a point a where their bank account experiences monthly growth.</p>
+                    <!-- <div class="saving-background-container-facts-divider"></div> -->
+                    <a href="./article-example.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="investing-basic">
+            <div class="investing-basic-container">
+                <div class="investing-basic-headline">
+                    <h2>Investing Basics</h2>
+                </div>
+                <div class="investing-basic-article-container">
+                    <a href="./article-example.html">
+                        <div class="investing-basic-article">
+                            <div class="investing-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="investing-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="investing-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="investing-basic-article">
+                            <div class="investing-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="investing-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="investing-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="investing-basic-article">
+                            <div class="investing-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="investing-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="investing-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="investing-basic-article">
+                            <div class="investing-basic-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="investing-basic-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="investing-basic-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+         <section class="article-slider">
+            <div class="article-wrapper">
+                    <div class="intro-slider-desc">
+                        <h3>Editor's Pick</h3>
+                    </div>
+                <div class="inner-article-slider-flex">
+                    <div class="slider">
+                        
+                        <div class="slide active">
+                            <div class="overlay"></div>
+                                <img class = "carousel-image" src="img/american-express-89024_1280.jpg" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>The Top 7 Best Credit Cards In Canada 2023</h3>
+                                    <span>10 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/architecture-7139263_1280-min.webp" alt="house">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>Five Biggest Investing Myths Debunked</h3>
+                                    <span>12 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/telephone-586268_1280.webp" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>Should You Finance a Phone</h3>
+                                    <span>6 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/dad-with-his-kid.jpg" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>How To Make(And Stick To) A Budget Amid A Looming Recession</h3>
+                                    <span>12 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <i class="fa-solid fa-chevron-left prev-btn"></i>
+                            <i class="fa-solid fa-chevron-right next-btn"></i>
+                        </div>
+                        <div class="slider-visibility">
+                            <div class="slide-icon active"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="article-aside-col">
+                        <a class = "hovering"href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>SAVING</span>
+                                    <h3>Exactly How Much Money Should You Be Saving?</h3>
+                                    <p>4 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>INVESTING</span>
+                                    <h3>How To Begin Investing</h3>
+                                    <p>12 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>SMALL BUSINESS</span>
+                                    <h3>Is Entrepreneurship The Right Path For Me?</h3>
+                                    <p>10 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "./article-example.html">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>BANKING</span>
+                                    <h3>The Future Of Banking</h3>
+                                    <p>7 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="sections-article-replacement-2">
+            <div class="sections-article-replacement-container-2">
+                <div class="sections-article-replacement-image-2">
+                    <img src="img/winter-home.webp" alt="">
+                </div>
+                <div class="sections-article-replacement-desc-2">
+                    <span>INVESTING</span>
+                    <h2>Understanding The New Tax-Free First Home Savings Account (FHSA)​</h2>
+                    <p>The Government of Canada has announced a new registered savings plan, the First Home Savings Account (FHSA). Here's what you need to know.​</p>
+                    <a href="./article-example.html">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="article-pick">
+            <div class="article-pick-container">
+                <div class="article-pick-headline">
+                    <h2>Latest Articles</h2>
+                </div>
+                <div class="article-pick-article-container">
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./article-example.html">
+                        <div class="article-pick-article">
+                            <div class="article-pick-article-image">
+                                <img src="img/architecture-7139263_1280-min.webp" alt="">
+                            </div>
+                            <div class="article-pick-article-desc">
+                                <span>INVESTING</span>
+                                <h2>Five Biggest Investing Myths Debunked</h2>
+                                <div class="article-pick-article-desc-date">
+                                    <p>15 MIN READ</p>
+                                    <p>Apr 27, 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sections-article-replacement-3">
+            <div class="sections-article-replacement-container-3">
+                <div class="sections-article-replacement-image-3">
+                    <img src="img/bitcoin.webp" alt="bitcoin">
+                </div>
+                <div class="sections-article-replacement-desc-3">
+                    <span>INVESTING</span>
+                    <h2>Are Cryptocurrencies A Good Investment?</h2>
+                    <p>Cryptocurrencies like Bitcoin are digital assets stored in secure digital wallets. The entire concept is intriguing, but are they good or bad investments?</p>
+                    <a href="./article-example.html">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="faq-accordion">
+            <div class="faq-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-accordion-container">
+                <div class="faq-accordion-row-1">
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>Why should I invest my money?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Investing is just one way that you can get your money to work for you. It gives you the potential to build your wealth and outpace inflation. Though, it is always important to consider the risk-return tradeoff.     
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>How can I invest without losing money to fees?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                There are many avenues to investing that involve little to no commission fees. For instance, many big banks offer young trader accounts which typically offer free trading to individuals 25 and under. There are also many online-only brokerages which, thanks to lower operating costs, offer very low (or sometimes non-existent) trading commissions.   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>How do I manage investment risk?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                The best way to manage investment risk is to tailor your portfolio to your comfort level. Sit down with an advisor and discuss your risk tolerance. They will be able to tell you what you should and shouldn't do with your hard-earned cash.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-row-2">
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>What is my investment time frame?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Your investment time or investment horizon is indicative from your goals and ultimately your age. Compound growth takes time and isn't always linear. Consider how much time you have to grow your money and design an investment plan that works for your situation — that is your time frame.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>What exactly are GICs?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Guaranteed Investment Certificates (GICs) are very safe and highly secure investments that offer guaranteed returns on your principal. Although many different subsets of GICs exist, most offer you a return of interest on top of your principal investment amount at the end of a predetermined term.
+                            </p>
+                            <p>
+                                GICs are simple and easy-to-understand investment vehicles, especially for beginners or investors with lower risk tolerances.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-quesiton">
+                            <h3>When should I meet with a financial advisor?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>
+                                Unless you are an experienced and educated investor, you should meet with a financial advisor at least once per year. Advisors can help you understand risk, the current market, and different investment portfolios. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-container-row">
+                    <div class="footer-col">
+                            <a href="https://budfor.com/">
+                                <img src="img/Budfor.png" alt="Budfor Footer Logo">
+                            </a>
+                            <p>We bring forth all the possibilities for <b>maximized financial potential.</b></p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sections</h4>
+                            <ul>
+                                <li><a href="https://budfor.com/budgeting">BUDGETING</a></li>
+                                <li><a href="https://budfor.com/saving">SAVING</a></li>
+                                <li><a href="https://budfor.com/investing">INVESTING</a></li>
+                                <li><a href="https://budfor.com/borrowing">BORROWING</a></li>
+                                <li><a href="https://budfor.com/small-business">SMALL BUSINESS</a></li>
+                                <li><a href="https://budfor.com/taxes">TAXES</a></li>
+                                <li><a href="https://budfor.com/travel">TRAVEL</a></li>
+                                <li><a href="https://budfor.com/banking">BANKING</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                            <ul>
+                                <li><a href="https://budfor.com/about-us">About Us</a></li>
+                                <li><a href="https://budfor.com/support">Support</a></li>
+                                <li><a href="https://budfor.com/careers">Careers</a></li>
+                                <li><a href="https://buiomedia.com/advertising">Advertise With Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col">
+                       <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h4>Copyright © 2023 Budfor. All Rights Reserved.</h4>
+            </div>
+        </footer>
+        <script src = "script.js" defer></script>
+        <!-- Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     
+     <script src = "script.js"></script>   
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

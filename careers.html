@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- CSS -->
+	<!-- get_stylesheet_uri(); -->
+    <link rel="stylesheet" href="style.css" type = "text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Budfor - Careers</title>
+</head>
+<body>
+    <header>
+        <nav class = "nav"> 
+            <i class="fa-solid fa-bars navOpenBtn"></i>
+            <a href = "../index.html" class = "logo"><img src = "img/Budfor.png" alt = "Budfor Logo"></a>
+            <ul class="navigation">
+                <i class="fa-solid fa-xmark navCloseBtn "></i>
+                <li><a href = "./budgeting.html">BUDGETING</a></li>
+                <li><a href = "./saving.html">SAVING</a></li>
+                <li><a href = "./investing.html">INVESTING</a></li>
+                <li><a href = "./borrowing.html">BORROWING</a></li>
+                <li><a href = "#">MORE<i class="fa-solid fa-arrow-down arrow-down"></i></a>
+                <ul class = "dropdown">
+                    <li><a href = "./banking.html">BANKING</a></li>
+                    <li><a href = "./small-business.html">SMALL BUSINESS</a></li>
+                    <li><a href = "./taxes.html">TAXES</a></li>
+                    <li><a href = "./travel.html">TRAVEL</a></li>
+                    
+                </ul>
+                <li><a href = "../about-us.html">ABOUT US</a></li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass search-icon" id = "searchIcon"></i>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+                <input type="text" placeholder="Search Here...">
+            </div>
+        </nav>      
+    </header>
+    <main>
+        <section class="careers-masthead">
+            <h1>What We Offer At Budfor</h1>
+            <h2>Discover a world of financial insight and cutting-edge reporting as we strive to empower our readers in the world of finance.</h2>
+        </section>
+        <section class="careers-flex-section">
+            <div class="careers-flex-container">
+                <div class="careers-flex">
+                    <div class="item dark">
+                        <h1>Career Satisfaction</h1>
+                    </div>
+                    <div class="item item-img">
+                        <img src="img/Screenshot 2023-05-13 at 19.53.36.png" alt="A happy woman smiles.">
+                    </div>
+                    <div class="item dark">
+                        <h1>Work-Life Balance</h1>
+                    </div>
+                    <div class="item item-img">
+                        <img src="img/application-3685436_1920.jpg" alt="A man fills out a job application.">
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="careers-flex"> -->
+                    <div class="item item-img">
+                        <img src="img/man-1718099_1280.jpg" alt="A man sits down while on his tablet.">
+                    </div>
+                    <div class="item dark">
+                        <h1>Growth Opportunities</h1>
+                    </div>
+                    <div class="item item-img">
+                        <img src="img/young-woman-2699780_1920.jpg" alt="A young woman does yoga outdoors.">
+                    </div>
+                    <div class="item apply-now">
+                            <h1>Apply Today to Join Our Team</h1> 
+                        <hr>
+                        <div>
+                            <a href="#positions">View Corporate Positions <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <br>
+                            <a href="#positions">View Operations Positions <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="three-quotes-section">
+            <div class="three-quotes">
+                <div class="quote-item">
+                    <div>
+                        <img src="img/time-3096535_1920.jpg" alt="A clock sits on a table.">
+                    </div>
+                    <div>
+                        <h1>Flexible Scheduling</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <p>Say goodbye to the rigid 9-to-5 grind and embrace a career that harmonizes with your personal commitments and passions.</p>
+                    </div>
+                </div>
+                <div class="quote-item">
+                    <div>
+                        <img src="img/american-1239040_1920.jpg" alt="A pay cheque is shown on a table.">
+                    </div>
+                    <div>
+                        <h1>Competitive Compensation</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <p>We conduct thorough market research to ensure our compensation packages align with industry standards, allowing us to attract and retain top talent.</p>
+                    </div>
+                </div>
+                <div class="quote-item">
+                    <div>
+                        <img src="img/meeting-594091_1920.jpg" alt="A team meets around a conference room.">
+                    </div>
+                    <div>
+                        <h1>Team Building</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <p>Join our team and embrace the power of team building. Together, we'll foster collaboration, celebrate individual strengths, and forge bonds that transcend the workplace.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="positions-section">
+                <a href="#">See Available Positions</a>
+            </div>
+        </section>
+        <section class="hiring-quote">
+            <h1>Take <span class="green-highlight">control</span> of your career, 
+                be <span class="green-highlight">rewarded</span> for your hard work, 
+                and <span class="green-highlight">build</span> meaningful connections 
+                that will <span class="green-highlight">propel</span> you towards success.
+            </h1>
+        </section>
+        <section class="positions" id="positions">
+            <div class="positions-item">
+                <div>
+                    <h1>Corporate</h1>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <h4>No positions available</h4>
+                </div>
+            </div>
+            <div class="positions-item">
+                <div>
+                    <h1>Operations</h1>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <h4>No positions available</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-row">
+                <div class="footer-col">
+                        <a href="https://budfor.com/">
+                            <img src="img/Budfor.png" alt="Budfor Footer Logo">
+                        </a>
+                        <p>We bring forth all the possibilities for <b>maximized financial potential.</b></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sections</h4>
+                        <ul>
+                            <li><a href="https://budfor.com/budgeting">BUDGETING</a></li>
+                            <li><a href="https://budfor.com/saving">SAVING</a></li>
+                            <li><a href="https://budfor.com/investing">INVESTING</a></li>
+                            <li><a href="https://budfor.com/borrowing">BORROWING</a></li>
+                            <li><a href="https://budfor.com/small-business">SMALL BUSINESS</a></li>
+                            <li><a href="https://budfor.com/taxes">TAXES</a></li>
+                            <li><a href="https://budfor.com/travel">TRAVEL</a></li>
+                            <li><a href="https://budfor.com/banking">BANKING</a></li>
+                        </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                        <ul>
+                            <li><a href="https://budfor.com/about-us">About Us</a></li>
+                            <li><a href="https://budfor.com/support">Support</a></li>
+                            <li><a href="https://budfor.com/careers">Careers</a></li>
+                            <li><a href="https://buiomedia.com/advertising">Advertise With Us</a></li>
+                        </ul>
+                </div>
+                <div class="footer-col">
+                   <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>Copyright © 2023 Budfor. All Rights Reserved.</h4>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <!-- CSS -->
+	<!-- get_stylesheet_uri(); -->
+    <link rel="stylesheet" href="style.css" type = "text/css">
+
+	
+    <title>Budfor</title>
+    <meta name="description" content="">
+    <!-- JS -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- Site Icon -->
+    <!-- <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/BudforSiteIcon.png" type="image/png"> -->
+    
+	</head>
+	<body>
+		<header>
+            <nav class = "nav"> 
+                <i class="fa-solid fa-bars navOpenBtn"></i>
+                <a href = "../index.html" class = "logo"><img src = "img/Budfor.png" alt = "Budfor Logo"></a>
+                <ul class="navigation">
+                    <i class="fa-solid fa-xmark navCloseBtn "></i>
+                    <li><a href = "./budgeting.html">BUDGETING</a></li>
+                    <li><a href = "./saving.html">SAVING</a></li>
+                    <li><a href = "./investing.html">INVESTING</a></li>
+                    <li><a href = "./borrowing.html">BORROWING</a></li>
+                    <li><a href = "#">MORE<i class="fa-solid fa-arrow-down arrow-down"></i></a>
+                    <ul class = "dropdown">
+                        <li><a href = "./banking.html">BANKING</a></li>
+                        <li><a href = "./small-business.html">SMALL BUSINESS</a></li>
+                        <li><a href = "./taxes.html">TAXES</a></li>
+                        <li><a href = "./travel.html">TRAVEL</a></li>
+                        
+                    </ul>
+                    <li><a href = "../about-us.html">ABOUT US</a></li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass search-icon" id = "searchIcon"></i>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+                    <input type="text" placeholder="Search Here...">
+                </div>
+            </nav>      
+        </header>
+        <a href="#" class = "backToTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <section class="homePage">
+                <div class = "homePage-container">
+                    <div class="homePage-title">
+                        <h1 class="pageTitle">We Bring All The Possibilites For <span>Maximized Financial Potential</span></h1>
+                        <div class="divider"></div>
+                    </div>
+                    <div class = "box-containers">
+                        <div class="box-container-row-1">
+                            <a href = "./budgeting.html" class="box">
+                                <div class="box-content">
+                                    <ion-icon name="clipboard-outline" class = "box-icon"></ion-icon>
+                                    <h2>BUDGETING</h2>
+                                </div>
+                            </a>
+                            <a href = "./saving.html" class="box">
+                                <div class="box-content">
+                                    <i class="fa-solid fa-money-bill box-icon"></i>
+                                    <h2>SAVING</h2>
+                                </div>
+                            </a>
+                            <a href = "./investing.html" class="box">
+                                <div class="box-content">
+                                    <i class="fa-solid fa-money-bill-trend-up box-icon"></i>
+                                    <h2>INVESTING</h2>
+                                </div>
+                            </a>
+                            <a href = "./borrowing.html" class="box">
+                                <div class="box-content">
+                                    <ion-icon name="cash-outline"  class = "box-icon"></ion-icon>
+                                    <h2>BORROWING</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box-container-row-2">
+                            <a href = "./banking.html " class="box">
+                                <div class="box-content">
+                                    <i class="fa-sharp fa-solid fa-building-columns box-icon"></i>
+                                    <h2>BANKING</h2>
+                                </div>
+                            </a>
+                            <a href = "./small-business.html" class="box">
+                                <div class="box-content">
+                                    <i class="fa-sharp fa-solid fa-person-chalkboard box-icon"></i>
+                                    <h2>SMALL BUSINESS</h2>
+                                </div>
+                            </a>
+                            <a href = "./taxes.html" class="box">
+                                <div class="box-content">
+                                    <i class="fa-solid fa-calculator box-icon"></i>
+                                    <h2>TAXES</h2>
+                                </div>
+                            </a>
+                            <a href = "./travel.html" class="box">
+                                <div class="box-content">
+                                    <i class="fa-solid fa-plane box-icon"></i>
+                                    <h2>TRAVEL</h2>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="budfor-banner">
+            <div class="banner-img">
+                <a href = "#subscribe">
+                    <img src = "img/Budfor-banner.png" alt = "Budfor Banner">
+                </a>
+            </div>
+        </section>
+        <section class="intro-page">
+            <div class="intro-page-container">
+                <!-- <div class="intro-page-div"> -->
+                    <div class="article-replacement">
+                        <a href="./article-example.html">
+                            <img src="img/dad-with-his-kid.jpg" alt="Dad with his kid in a cart down an escaltor">
+                            <span>BUDGETING</span>
+                            <h2>How To Make (And Stick To) A Budget Amid A Looming Recession</h2>
+                            <p>With inflation on the rise and an unpredictable economy, having 
+                            a reliable budget is arguably more important than ever. But is 
+                            it really all that difficult?</p>
+                        </a>
+                    </div>
+                <div class="articles-sidebar">
+                    <div class="highlights">
+                        <span>Explore The Recent</span>
+                        <h2>highlights</h2>
+                    </div>
+                        <a href="./article-example.html">
+                            <div class="article">
+                                <div class="image-article">
+                                    <img src="img/american-express-89024_1280.jpg" alt="Spanning of three unknown MasterCard, Visa and American Express credit cards.">
+                                </div>
+                                <div class="article-description">
+                                    <h3>The Top 7 Best Credit Cards
+                                        In Canada 2023</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article-example.html">
+                            <div class="article">
+                                <div class="image-article">
+                                    <img src="img/oshawa-4331678_1280.webp" alt="Spanning of three unknown MasterCard, Visa and American Express credit cards.">
+                                </div>
+                                <div class="article-description">
+                                    <h3>When (And When Not) To Touch Your Home Equity Line Of Credit</h3>
+                                </div>  
+                            </div>
+                        </a>
+                        <a href="./article-example.html">
+                            <div class="article">
+                                <div class="image-article">
+                                    <img src="img/architecture-7139263_1280-min.webp" alt="Spanning of three unknown MasterCard, Visa and American Express credit cards.">
+                                </div>
+                                <div class="article-description">
+                                    <h3>Five Biggest Investing Myths Debunked</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article-example.html">
+                            <div class="article">
+                                <div class="image-article">
+                                    <img src="img/car-841465_1280.webp" alt="Spanning of three unknown MasterCard, Visa and American Express credit cards.">
+                                </div>
+                                <div class="article-description">
+                                    <h3>Simple Tips You Can Use To Save Money On Car Insurance</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article-example.html">
+                            <div class="article">
+                                <div class="image-article">
+                                    <img src="img/atm-199156_1280.webp" alt="Spanning of three unknown MasterCard, Visa and American Express credit cards.">
+                                </div>
+                                <div class="article-description">
+                                    <h3>Comparing The Best High-Interest Savings Accounts Available To Canadians</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./article-example.html">
+                        <div class="article">
+                            <div class="image-article">
+                                <img src="img/telephone-586268_1280.webp" alt="Spanning of three unknown MasterCard, Visa and American Express credit cards.">
+                            </div>
+                            <div class="article-description">
+                                <h3>Should You Finance A Phone?</h3>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                
+            </div>
+        </section> 
+        <section class="article-slider">
+            <div class="article-wrapper">
+                    <div class="intro-slider-desc">
+                        <h3>Trusted Financial Articles, published everyday</h3>
+                        <a href = "./article-example.html">Sell all articles</a>
+                    </div>
+                <div class="inner-article-slider-flex">
+                    <div class="slider">
+                        
+                        <div class="slide active">
+                            <div class="overlay"></div>
+                                <img class = "carousel-image" src="img/american-express-89024_1280.jpg" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>The Top 7 Best Credit Cards In Canada 2023</h3>
+                                    <span>10 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/architecture-7139263_1280-min.webp" alt="house">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>Five Biggest Investing Myths Debunked</h3>
+                                    <span>12 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/telephone-586268_1280.webp" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>Should You Finance a Phone</h3>
+                                    <span>6 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="overlay"></div>
+                            <img class = "carousel-image" src="img/dad-with-his-kid.jpg" alt="cards">
+                            <div class="info">
+                                <a href = "./article-example.html">
+                                    <h3>How To Make(And Stick To) A Budget Amid A Looming Recession</h3>
+                                    <span>12 MIN READ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <i class="fa-solid fa-chevron-left prev-btn"></i>
+                            <i class="fa-solid fa-chevron-right next-btn"></i>
+                        </div>
+                        <div class="slider-visibility">
+                            <div class="slide-icon active"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                            <div class="slide-icon"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="article-aside-col">
+                        <a class = "hovering" href = "#">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>SAVING</span>
+                                    <h3>Exactly How Much Money Should You Be Saving?</h3>
+                                    <p>4 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "#">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>INVESTING</span>
+                                    <h3>How To Begin Investing</h3>
+                                    <p>12 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "#">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>SMALL BUSINESS</span>
+                                    <h3>Is Entrepreneurship The Right Path For Me?</h3>
+                                    <p>10 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href = "#">
+                            <div class="article-box">
+                                <div class="article-col">
+                                    <span>BANKING</span>
+                                    <h3>The Future Of Banking</h3>
+                                    <p>7 MIN READ</p>
+                                </div>
+                                <div class="arrow-right">
+                                    <i class="fa-solid fa-arrow-right right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission-statement">
+            <div class="statment-row">
+                <div class="mission-desc">
+                    <h3>Our Mission Statement</h3>
+                    <p>We produce high-quality content designed by 
+                        our team of experts and editors, with 
+                        the overall goal of <span class = "mission-desc-first-span">educating youth on finances.</span> 
+                        It is our community comprised of people like you that 
+                        keep us going. <span class = "mission-desc-second-span">Interested in learning more about our company?</span></p>
+                        <a href="#">Read More</a>
+                </div>
+                <div class="mission-image">
+                    <img src="img/our-mission.jpg" alt="our mission statment">
+                </div>
+            </div>
+        </section>
+        <section class="subscribe" id= "subscribe">
+            <div class="subscribe-row">
+                <div class="subscribe-desc">
+                    <!-- <div class="subscribe-desc-inner"> -->
+                    <h3>Subscribe. Stay Informed. Grow.</h3>
+                    <div class="underline"></div>
+                    <p>Subscribe now for the latest finance news, 
+                        helpful tips and tricks, as well as a bit of inspiration, 
+                        straight to your inbox</p>
+                        <form class = "subscribe-form">
+                            <input type="text" required>
+                            <div class="form-underline"></div>
+                            <label>Enter Email Address</label>
+                            <button class = "sub-btn">Subscribe</button>
+                        </form>
+                        <p>We keep your information safe and secure. 
+                            By clicking the subscribe button you agree to 
+                            our <a href = "#">Terms of Use</a> and <a href = "#">Privacy Policy</a></p>
+                        <!-- </div>   -->
+                </div>
+                <div class="subscribe-image">
+                    <img src="img/phones.png" alt="phones">
+                </div>
+            </div>
+        </section>
+        <section class="three-divs">
+            <div class="three-divs-row">
+                <div class="resilient">
+                    <div class="resilient-desc">
+                        <p>Being able to overcome adversity and successfully 
+                            navigate through the hardships of everyday life is crucial. 
+                            It just takes a bit of practice.</p>
+                        <h3>Be Resilient.</h3>
+                    </div>
+                </div>
+                <div class="confident">
+                    <div class="confident-desc">
+                        <p>Having a positive self-image and strong 
+                            sense of self-worth is what drives action. 
+                            Start by looking back at previous accomplishments</p>
+                        <h3>Be Confident.</h3>
+                    </div>
+                </div>
+                <div class="innovative">
+                    <div class="innovative-desc">
+                        <p>An innovative mindset comes with those who think 
+                            unconventionally, who generate brilliant ideas,
+                            and who inevitable change the world</p>
+                        <h3>Be Innovative.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="closing">
+            <div class="closing-row">
+                <div class="closing-row-popularTopics">
+                    <h3>Popular Topics</h3>
+                    <div class="popularTopics">
+                        <div class="popularTopics-firstDiv">
+                            <a href="#">
+                                <div class="popularTopic">
+                                    <i class="fa-solid fa-money-bill-trend-up popularTopic-icon"></i>
+                                    <h3>Investing</h3>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="popularTopic">
+                                    <i class="fa-sharp fa-solid fa-building-columns popularTopic-icon"></i>
+                                    <h3>Banking</h3>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="popularTopic">
+                                    <ion-icon name="cash-outline"  class = "popularTopic-icon"></ion-icon>
+                                    <h3>Borrowing</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="popularTopics-secondDiv">
+                            <a href="#">
+                                <div class="popularTopic">
+                                    <i class="fa-solid fa-calculator popularTopic-icon"></i>
+                                    <h3>Taxes</h3>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="popularTopic">
+                                    <i class="fa-solid fa-plane popularTopic-icon"></i>
+                                    <h3>Travel</h3>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="popularTopic">
+                                    <i class="fa-solid fa-money-bill popularTopic-icon"></i>
+                                    <h3>Saving</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="closing-row-stayInTouch">
+                    <div class="stayInTouch">
+                        <span>Stay in touch on mobile</span>
+                        <h3>Your Advices Are One Click Away</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                             Obcaecati, repellendus autem nam soluta optio natus! 
+                             Impedit corporis odio animi nisi?</p>
+                        <a href="#">Click Here</a>
+                    </div>
+                    <div class="stayInTouch-img">
+                        <img src="img/iphone.png" alt="image of iphone">
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <footer>
+            <div class="footer-container">
+                <div class="footer-container-row">
+                    <div class="footer-col">
+                            <a href="https://budfor.com/">
+                                <img src="img/Budfor.png" alt="Budfor Footer Logo">
+                            </a>
+                            <p>We bring forth all the possibilities for <b>maximized financial potential.</b></p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sections</h4>
+                            <ul>
+                                <li><a href="https://budfor.com/budgeting">BUDGETING</a></li>
+                                <li><a href="https://budfor.com/saving">SAVING</a></li>
+                                <li><a href="https://budfor.com/investing">INVESTING</a></li>
+                                <li><a href="https://budfor.com/borrowing">BORROWING</a></li>
+                                <li><a href="https://budfor.com/small-business">SMALL BUSINESS</a></li>
+                                <li><a href="https://budfor.com/taxes">TAXES</a></li>
+                                <li><a href="https://budfor.com/travel">TRAVEL</a></li>
+                                <li><a href="https://budfor.com/banking">BANKING</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                            <ul>
+                                <li><a href="https://budfor.com/about-us">About Us</a></li>
+                                <li><a href="https://budfor.com/support">Support</a></li>
+                                <li><a href="https://budfor.com/careers">Careers</a></li>
+                                <li><a href="https://buiomedia.com/advertising">Advertise With Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="footer-col">
+                       <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h4>Copyright © 2023 Budfor. All Rights Reserved.</h4>
+            </div>
+        </footer>
+        
+        <script src = "script.js" defer></script>
+        <!-- Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
