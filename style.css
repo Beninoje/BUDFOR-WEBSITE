@@ -1547,7 +1547,30 @@ header{
     .sections-intro-container{
         width:90%;
     }
+    .box-container-row-1{
+        flex-direction: column;
+    }
+    .box-container-row-2{
+        flex-direction: column;
+    }
+    .box{
+        width: 100% !important;
+    }
+    .inner-article-slider-flex{
+        padding:20px;
+    }
+    .closing-row{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .popularTopics{
+       padding-left:0; 
+    }
+    footer{
+        padding-left:20px !important;
+    }
 }
+
 /*?--------Article Replacement Section--------*/
 .sections-article-replacement{
     width: 100%;
